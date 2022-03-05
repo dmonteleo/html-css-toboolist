@@ -6,7 +6,42 @@
 
 body {
   font-family: Arial;
-  background-color: #F6F8F9;
+  /* background-color: #F6F8F9; */
+  background-color: #f6f8f9;
+}
+
+/* UTILITIES */
+
+.tag {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tag.editorial {
+  background-color: #45ABEA;
+}
+
+.tag.goals {
+  background-color: #9C72E4;
+}
+
+.tag.recruting {
+  background-color: #64C0A9;
+}
+
+.tag.mobile {
+  background-color: #F29E32;
+}
+
+.tag.website {
+  background-color: #d863a1;
+}
+
+.tag.sales {
+  background-color: #b0c926;
 }
 
 /* HEADER */
@@ -15,6 +50,7 @@ header {
   background-color: white;
   /* font-weight: bold; */
   padding: 10px 20px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -27,3 +63,83 @@ header {
   /* text-align: center; */
   vertical-align: middle;
 }
+
+/* MAIN */
+
+.container {
+  background-color: white;
+  height: 500px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.top-main, .bottom-main{
+  margin-bottom: 3px;
+  padding: 15px 50px;   
+}
+
+.top-main {
+  height: 55px;
+}
+
+main div button {
+  padding: 5px 10px;
+  margin: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filled {
+  background-color: #47ADF1;
+  color: white;
+  border: 1px solid #47ADF1;
+}
+
+.empty {
+  background-color: white;
+  color: lightgray; 
+  border: 1px solid #C5CBD0;
+}
+
+.bottom-main {
+  padding: 50px;
+}
+
+.bottom-main ul li h3::before {
+  content:'\25BE';
+}
+
+ul {
+  list-style: none;
+  line-height: 35px;
+}
+
+.circle::before {
+  content: 'x';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  /* background-color: red; */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+}
+
+.circle.checked::before {
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+}
+
+.circle.deleted::before {
+  content: '\2718';
+  color: red;
+  border: 1px solid red;
+}
+
+
+
