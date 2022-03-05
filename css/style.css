@@ -76,11 +76,12 @@ header {
 
 .top-main, .bottom-main{
   margin-bottom: 3px;
-  padding: 15px 50px;   
+  /* padding: 15px 50px;    */
 }
 
 .top-main {
   height: 55px;
+  padding: 10px 40px;
 }
 
 main div button {
@@ -105,7 +106,7 @@ main div button {
 }
 
 .bottom-main {
-  padding: 50px;
+  padding: 20px 40px;
 }
 
 .bottom-main ul li h3::before {
@@ -115,6 +116,7 @@ main div button {
 ul {
   list-style: none;
   line-height: 35px;
+  font-weight: 500;
 }
 
 .circle::before {
